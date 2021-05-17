@@ -1,0 +1,660 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.container{
+    margin: auto;
+}
+
+
+
+/*********************  Start Header Page **************/
+header {
+    background-color: #252D39;
+    display: none;
+   
+}
+header .container .social-media {
+    list-style: none;
+}
+header .container .social-media li{
+    display: inline-block;
+}
+header .container .social-media li a{
+    padding: 7Px;
+    display: inline-block;
+}
+header .container .social-media li a .facebook{
+    color: #0277BD;
+    background-color: #fff;
+}
+/* .fa-phone-square:before{
+   color: #86C33A;
+} */
+
+
+/******************** End Header Page  *********/
+/******************** Start  Smart Screen  *********/
+.smart-screen{
+    background-color: #252D39;
+    overflow: hidden;
+    position: sticky;
+    top:0px;
+    z-index: 9999;
+    display: none;
+    
+    
+}
+
+.smart-screen .container .social-media {
+    list-style: none;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.smart-screen .container .social-media li a .white{
+    color: #fff;
+    
+}
+.btn-menu{
+    cursor: pointer;
+}
+/*Start Bar menus*/
+.bar-menus{
+    background-color: #252D39;
+    opacity: 0.8;
+    width: 30%;
+    height: 100vh;
+    position: fixed;
+    z-index: 99999;
+    text-align: center;
+    left: -120%;
+    transition: left 0.2s ease-in-out;
+  
+}
+.bar-menus.active{
+    left: 0;
+}
+.bar-menus .back{
+    position: absolute;
+    left: 90%;
+    cursor: pointer;
+    z-index: 999999;
+}
+.bar-menus a{
+    color: #fff;
+}
+.bar-menus ul{
+    position: absolute;
+    width: 100%;
+    padding-top: 52px;
+   
+}
+.bar-menus ul li{
+    padding: 15px 2px;
+    cursor: pointer;
+    font-weight: bold ;
+    
+}
+.bar-menus ul li:hover{
+    background-color:#86C33A;
+}
+/*End Bar menus*/
+/********************* Start Smart Screen  **********/
+/********************* Start Nav-Bar  **********/
+nav{
+    background-color: #D9D9D9;
+    position: sticky;
+    top: 0;
+    z-index: 9999;
+    overflow: hidden;
+    display: none;
+
+}
+nav .container ul{
+    list-style: none;
+    text-align: center;
+    
+}
+nav .container ul li{
+    display: inline-block;  
+    
+   
+}
+nav .container ul li:not(:first-of-type){
+    margin-left: 3%;
+}
+nav .container ul li:not(:last-of-type){
+    margin-right: 3%;
+   
+}
+nav .container ul li a{
+    color: #000;
+    font-weight: bold;
+    padding: 11Px;
+    display: block;
+
+}
+nav .container ul li a:hover{
+    background-color: #86C33A;
+    color: #fff;
+}
+/********************* End Nav-Bar  **********/
+main{
+    background-color: rgb(164 176 190 / 42%);
+    overflow: hidden;
+ }
+ 
+ main .container .container-main{
+     display: grid;
+     grid-template-columns: 0.7fr 1fr; 
+     height: 400px
+ }
+ main .container .container-main .about-us{
+     background-color: #fff;
+     text-align: center;
+     
+ }
+ main .container .container-main .about-us p{
+     line-height: 2;
+     font-weight: bold;
+ }
+ 
+ /*****Start Slider ******/
+ /***************************
+ ******* 0 Start Old Slider ***
+ ***************************/
+ .carousel-container{
+    width: 100%;
+    border: 3px solid #fcfcfc61;
+    position: relative;
+    overflow: hidden;
+ 
+ 
+ }
+ .carousel-container .carousel-slide{
+     display: flex;
+     width: 100%;
+     height: 500px;
+     
+ }
+
+
+ 
+ .carousel-container span{
+     padding: 0;
+     outline: none;
+     border: none;
+     outline: none;
+     border-radius: 50px;
+     position: absolute;
+     z-index: 10;
+     top: 45%;
+     cursor: pointer;
+     display: block;
+ }
+ .carousel-container span:first-of-type{
+     left: 30Px;
+ 
+ }
+ .carousel-container span:last-of-type{
+     right: 30px;
+ }
+ 
+  /***************************
+ ******* End Old Slider ***
+ ***************************/
+  /***************************
+ ******* 1 Start Old Slider ***
+ ***************************/
+ .slider-container{
+    width: 100%;
+    border: 3px solid #fcfcfc61;
+    overflow: hidden;
+ }
+ 
+ .slider-container .opa-slide{
+    width: 100%;
+    height: 100%;
+    position: relative;
+ }
+ 
+ .slider-container .opa-slide .slider{ 
+    width: 100%;
+    height: 100%;
+    background-image: url('../img/Slide/04.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+ }
+ 
+
+
+
+
+  /***************************
+ ******* 1 End Old Slider ***
+ ***************************/
+ /*****End Slider *******/
+ /********************* End Slider  **********/
+/********************* Start Square **********/
+aside{
+    background-color: #A4B0BE;
+    overflow: hidden;
+}
+aside .container .container-square{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+aside .container .container-square .square{
+    width: 261Px;
+    height: 300px;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    background-color: #252D39;
+    text-align: center;
+    color: #fff;
+    box-shadow:  5px 4px 7px 2px rgba(0,0,0,0.15);
+    
+}
+aside .container .container-square .square > span{
+    display: block;
+    background-color: #86c33a33;
+    border-radius: 33%;
+    padding: 30px;
+    width: 111Px;
+    margin: auto;
+    animation: moveSquare infinite steps(6) 5s;
+    position: relative;
+}
+aside .container .container-square .square > span::before{
+    content: ' ';
+    border: 2px solid #86c33a;
+    position: absolute;
+    width: 108Px;
+    height: 100Px;
+    border-radius: 50%;
+    background-color: transparent;
+    position: absolute;
+    top: 0px;
+    left: -5px;
+    animation: moveSquare infinite steps(6) 5s;
+}
+aside .container .container-square .square > h3{
+    margin-top: 5%;
+    margin-bottom: 5%;
+    font-size: 25px;
+}
+
+
+
+/********************* End Square  **********/
+/********************* Start Footer  ********/
+footer{
+    background-color: #252D39;
+    padding-top: 50px;
+    color: #fff;
+    overflow: hidden;
+}
+footer .container-footer{
+    display: grid;
+    grid-template-columns: 1.4fr 1fr 1fr;
+    padding-bottom:10% ;
+}
+footer .description img{
+    margin-bottom: 5px;
+    width: 130px;
+}
+footer .container-footer .service{
+    text-align: left;
+    padding-top: 7%;
+
+}
+footer .container-footer .service ul li a{
+   color: #fff;
+}
+footer .container-footer .contact{
+    padding-top: 5%;
+}
+/********************* End Footer  **********/
+
+
+
+
+
+
+
+
+
+
+
+
+
+/***** Start framework ******/
+
+a{
+    text-decoration: none;
+}
+@keyframes moveSquare{
+    0%{
+     border-top-left-radius: 20%; 
+     border-top-right-radius: 5%; 
+      border-bottom-right-radius: 100%; 
+     border-bottom-left-radius: 5%; 
+    }
+    10%{
+        border-top-left-radius: 0px; 
+        border-top-right-radius: 30%; 
+         border-bottom-right-radius: 90%; 
+        border-bottom-left-radius: 100%;
+    }
+    25%{
+        border-top-left-radius: 90%; 
+        border-top-right-radius: 50%; 
+         border-bottom-right-radius: 80%; 
+        border-bottom-left-radius: 5%;
+    }
+    50%{
+        border-top-left-radius: 80%;
+        border-top-right-radius: 70%; 
+         border-bottom-right-radius: 70%; 
+        border-bottom-left-radius: 100%;
+    }
+    75%{
+        border-top-left-radius: 30%; 
+        border-top-right-radius: 80%; 
+         border-bottom-right-radius: 60%; 
+        border-bottom-left-radius: 20%;
+    }
+    100%{
+        border-top-left-radius: 10%; 
+        border-top-right-radius: 90%; 
+         border-bottom-right-radius: 20%; 
+        border-bottom-left-radius: 100%;
+    }
+}
+/***** End framework ******/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/************** Start MEDIA QUERY  **********/
+@media (min-width: 0px) AND (max-width: 350px){
+    .container{
+        width: 320px !important;
+
+    }
+     /* Start NavBar For Desktop*/
+    nav{
+        display: none;
+    } 
+     /* End NavBar For Desktop*/
+   
+    /*Start Container About and Slider */
+     main .container .container-main{
+        grid-template-columns: 1fr ;
+    }
+
+    main .container .container-main{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    main .container .container-main .about-us .paragraph{
+        margin-bottom: 15px; 
+     } 
+
+     .carousel-container .carousel-slide img{
+        width:100%
+     }
+     /*End Container About and Slider */
+
+
+
+    /* Start Slider For Smart Phone */
+    
+     main .container .container-main{
+        height:500px;
+    }
+    .carousel-container .carousel-slide{
+        height: 300px;
+        width: 100%;
+    } 
+     /* End Slider For Smart Phone */
+
+
+     /*Start Footer For Smart Phone*/
+     footer .container-footer{
+        padding-left: 20px;
+        display: grid;
+        grid-template-columns:  1fr !important;
+        padding-bottom:10% ;
+    }
+    footer .container-footer ul{
+        list-style: none;
+    }
+    footer .container-footer .contact{
+        margin-top: 15px;
+    }
+     /*End Footer For Smart Phone*/
+ } 
+
+
+
+@media (max-width: 476px)   { 
+   
+    
+    
+    .container{
+        width: 370px ;
+
+    }
+     /*Disactive NavBar For Small Screen*/
+     .smart-screen{
+        display: block !important;
+    }
+    /* Start NavBar For Desktop*/
+    nav{
+        display: none;
+    }
+     /* End NavBar For Desktop*/
+   
+    /*Start Container About and Slider */
+     main .container .container-main{
+        grid-template-columns: 1fr ;
+    }
+
+    main .container .container-main{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    main .container .container-main .about-us .paragraph{
+        margin-bottom: 15px;
+    } 
+    .carousel-container .carousel-slide img{
+        width:100%;
+     }
+     /*End Container About and Slider */
+
+
+
+    /* Start Slider For Smart Phone */
+     main .container .container-main{
+        height:500px !important;
+    }
+    .carousel-container .carousel-slide{
+        height: 300px !important;
+        width: 100% !important;
+    } 
+     /* End Slider For Smart Phone */
+
+         /*Start Square*/
+    aside .container .container-square {
+        flex-direction: column;
+        align-items: center;
+       
+      
+        
+    }
+    /*End Square*/
+     /*Start Footer For Smart Phone*/
+     footer .container-footer{
+        padding-left: 20px;
+        display: grid;
+        grid-template-columns:  1fr !important;
+        padding-bottom:10% ;
+    }
+    footer .container-footer ul{
+        list-style: none;
+    }
+     /*End Footer For Smart Phone*/
+ }
+ 
+ @media (min-width: 477px){
+    .container{
+        width: 560px;
+        
+    }
+    .smart-screen{
+        display: block !important;
+    }
+
+    main .container .container-main{
+        display: grid;
+        grid-template-columns:  1fr; 
+        height: 606px
+    }
+    main .container .container-main .about-us .paragraph{
+        margin-bottom: 15px;
+    }
+
+
+    /*Start Square*/
+    aside .container .container-square {
+        flex-direction: column;
+        align-items: center;
+       
+      
+        
+    }
+    /*End Square*/
+    
+ }
+
+
+
+
+
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) { 
+     .container{
+        width: 760px;
+        
+    }
+
+    /* NavBar SmartPhone*/
+    .smart-screen{
+        display: block !important;
+    }
+
+    main .container .container-main{
+        display: grid;
+        grid-template-columns:  1fr; 
+        height: 606px
+    }
+    main .container .container-main .about-us .paragraph{
+        margin-bottom: 15px;
+    }
+    .carousel-container {
+        width: 99%;
+        margin: auto;
+        flex-direction: row !important;
+        align-items: center;
+    }
+    /*Start Slider For Desktop*/
+    /* main .container .container-main {
+        height: 361px !important;
+        width: 100% !important;
+    }
+    .carousel-container .carousel-slide{
+        height: 361px !important;
+        width: 100% !important;
+    } */
+    
+    /*End Slider For Desktop*/
+
+    /*Start Square For Ipad*/
+    aside .container .container-square{
+        flex-direction: row;
+    }
+    aside .container .container-square .square{
+        width: 245Px;
+        height: 300px;
+      
+        
+    }
+    /*End Square For Ipad*/
+   
+    
+}
+
+ /* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    .container{
+        width: 960px;
+    }
+
+    /*Disactive NavBar For Small Screen*/
+    .smart-screen{
+        display: none !important;
+    }
+    /*Activeted Menu For Deskctop*/
+    header{
+        display: block !important; 
+    }
+    nav{
+        display: block !important;
+    }
+
+
+    /*Edit About For desktop*/
+    main .container .container-main{
+        display: grid;
+        grid-template-columns: 0.7fr 1fr; 
+        height: 400px
+    }
+    main .container .container-main .about-us .paragraph{
+        margin-bottom: 0px;
+    }
+ }
+
+/*  X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    .container{
+        width: 1140px;
+    }
+
+
+  }
+
+/* XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) {
+    .container{
+        width: 1320px;
+    }
+  }
+
+/************** Start MEDIA QUERY  **********/

@@ -1,0 +1,554 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.container{
+    margin: auto;
+}
+
+
+
+/*********************  Start Header Page **************/
+header {
+    background-color: #252D39;
+    display: none;
+   
+}
+header .container .social-media {
+    list-style: none;
+}
+header .container .social-media li{
+    display: inline-block;
+}
+header .container .social-media li a{
+    padding: 7Px;
+    display: inline-block;
+}
+header .container .social-media li a .facebook{
+    color: #0277BD;
+    background-color: #fff;
+}
+/* .fa-phone-square:before{
+   color: #86C33A;
+} */
+
+
+/******************** End Header Page  *********/
+/******************** Start  Smart Screen  *********/
+.smart-screen{
+    background-color: #252D39;
+    overflow: hidden;
+    position: sticky;
+    top:0px;
+    z-index: 9999;
+    display: none;
+    
+    
+}
+
+.smart-screen .container .social-media {
+    list-style: none;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.smart-screen .container .social-media li a .white{
+    color: #fff;
+    
+}
+.btn-menu{
+    cursor: pointer;
+}
+/*Start Bar menus*/
+.bar-menus{
+    background-color: #252D39;
+    opacity: 0.8;
+    width: 30%;
+    height: 100vh;
+    position: fixed;
+    z-index: 99999;
+    text-align: center;
+    left: -120%;
+    transition: left 0.2s ease-in-out;
+  
+}
+.bar-menus.active{
+    left: 0;
+}
+.bar-menus .back{
+    position: absolute;
+    left: 90%;
+    cursor: pointer;
+    z-index: 999999;
+}
+.bar-menus a{
+    color: #fff;
+}
+.bar-menus ul{
+    position: absolute;
+    width: 100%;
+    padding-top: 52px;
+   
+}
+.bar-menus ul li{
+    padding: 15px 2px;
+    cursor: pointer;
+    font-weight: bold ;
+    
+}
+.bar-menus ul li:hover{
+    background-color:#86C33A;
+}
+/*End Bar menus*/
+/********************* Start Smart Screen  **********/
+/********************* Start Nav-Bar  **********/
+nav{
+    background-color: #D9D9D9;
+    position: sticky;
+    top: 0;
+    z-index: 9999;
+    overflow: hidden;
+    display: none;
+
+}
+nav .container ul{
+    list-style: none;
+    text-align: center;
+    
+}
+nav .container ul li{
+    display: inline-block;  
+    
+   
+}
+nav .container ul li:not(:first-of-type){
+    margin-left: 3%;
+}
+nav .container ul li:not(:last-of-type){
+    margin-right: 3%;
+   
+}
+nav .container ul li a{
+    color: #000;
+    font-weight: bold;
+    padding: 11Px;
+    display: block;
+
+}
+nav .container ul li a:hover{
+    background-color: #86C33A;
+    color: #fff;
+}
+/********************* End Nav-Bar  **********/
+/*********************************
+************* Start Avis  *****
+**********************************/
+.the-avis{
+    background-color: #A4B0BE;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    overflow: hidden;
+    
+}
+.the-avis .container .image-logo{
+    border-radius: 45px;
+    -webkit-border-radius:45px;
+    -moz-border-radius:45px;
+    -ms-border-radius:45px;
+    -o-border-radius:45px;
+}
+.the-avis .container h1{
+    text-align: center;
+    margin-bottom: 10%;
+    font-size:45px ;
+    margin-top: -10%;
+
+}
+.the-avis .constainer-avis{
+    width: 800px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    border-radius: 25px;
+    margin: auto;
+    -webkit-border-radius: 138px;
+    -moz-border-radius: 25px;
+    -ms-border-radius: 25px;
+    -o-border-radius: 25px;
+    padding-top: 73px;
+}
+.the-avis .constainer-avis .avis{
+    background-color: #2FBBEC;
+    color: #fff;
+    width: 492Px;
+    margin-bottom: 41px;
+    border-radius: 6px;
+    line-height: 2.3;
+    font-size: 19px;
+    padding: 15px;
+    border-radius: 58px;
+    
+    
+}
+.the-avis .constainer-avis .avis span{
+    font-weight: bold;
+    font-size: 23px;
+    color: #000;
+}
+.the-avis .constainer-avis .avis:nth-of-type(even){
+    background-color: #86C33A;
+    align-self: flex-end;
+}
+/*********************************
+************* End Avis  ********
+**********************************/
+
+
+
+
+
+
+/********************* Start Footer  ********/
+footer{
+    background-color: #252D39;
+    padding-top: 50px;
+    color: #fff;
+    overflow: hidden;
+}
+footer .container-footer{
+    display: grid;
+    grid-template-columns: 1.4fr 1fr 1fr;
+    padding-bottom:10% ;
+}
+footer .description img{
+    margin-bottom: 5px;
+    width: 130px;
+}
+footer .container-footer .service{
+    text-align: left;
+    padding-top: 7%;
+
+}
+footer .container-footer .service ul li a{
+   color: #fff;
+}
+footer .container-footer .contact{
+    padding-top: 5%;
+}
+/********************* End Footer  **********/
+
+
+
+
+
+
+
+
+
+
+
+
+
+/***** Start framework ******/
+
+a{
+    text-decoration: none;
+}
+@keyframes moveSquare{
+    0%{
+     border-top-left-radius: 20%; 
+     border-top-right-radius: 5%; 
+      border-bottom-right-radius: 100%; 
+     border-bottom-left-radius: 5%; 
+    }
+    10%{
+        border-top-left-radius: 0px; 
+        border-top-right-radius: 30%; 
+         border-bottom-right-radius: 90%; 
+        border-bottom-left-radius: 100%;
+    }
+    25%{
+        border-top-left-radius: 90%; 
+        border-top-right-radius: 50%; 
+         border-bottom-right-radius: 80%; 
+        border-bottom-left-radius: 5%;
+    }
+    50%{
+        border-top-left-radius: 80%;
+        border-top-right-radius: 70%; 
+         border-bottom-right-radius: 70%; 
+        border-bottom-left-radius: 100%;
+    }
+    75%{
+        border-top-left-radius: 30%; 
+        border-top-right-radius: 80%; 
+         border-bottom-right-radius: 60%; 
+        border-bottom-left-radius: 20%;
+    }
+    100%{
+        border-top-left-radius: 10%; 
+        border-top-right-radius: 90%; 
+         border-bottom-right-radius: 20%; 
+        border-bottom-left-radius: 100%;
+    }
+}
+/***** End framework ******/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/************** Start MEDIA QUERY  **********/
+@media (min-width: 0px) AND (max-width: 350px){
+    .container{
+        width: 320px !important;
+
+    }
+     /* Start NavBar For Desktop*/
+    nav{
+        display: none;
+    } 
+    /*Start Page Engargemy*/
+     /*Start Page Engargemy*/
+
+     .the-avis .container .image-logo{
+        width: 108px;
+        display: inline-block;
+    }
+    .the-avis .container h1{
+      font-size: 45px;
+      margin-top: -10%;
+      display: inline-block !important;
+       margin: 10% !important;
+    
+    }
+
+    .the-avis .constainer-avis .avis{
+        font-size: 25px;  
+        width: 100%;
+        border-radius: 26px;
+    }
+    .the-avis .constainer-avis .avis span{
+        font-size: 27px;
+    
+    }
+    .the-avis .constainer-avis{
+        width: 300px !important;
+        border-radius: 40px !important;
+        -webkit-border-radius: 40px !important;
+   }
+   .the-avis .constainer-avis .avis:nth-of-type(even){
+     background-color: #86C33A;
+     align-self: flex-start;
+ }
+  
+    /*End Page Engargemy*/
+    /*End Page Engargemy*/
+   
+
+
+     /*Start Footer For Smart Phone*/
+     /*Start Footer For Smart Phone*/
+     footer .container-footer{
+        padding-left: 20px;
+        display: grid;
+        grid-template-columns:  1fr !important;
+        padding-bottom:10% ;
+    }
+    footer .container-footer ul{
+        list-style: none;
+    }
+     /*End Footer For Smart Phone*/
+     /*End Footer For Smart Phone*/
+ } 
+
+
+
+@media (max-width: 476px)   { 
+   
+    
+    
+    .container{
+        width: 370px ;
+
+    }
+     /*Disactive NavBar For Small Screen*/
+     .smart-screen{
+        display: block !important;
+    }
+    /* Start NavBar For Desktop*/
+    nav{
+        display: none;
+    }
+     /* End NavBar For Desktop*/
+
+     /*Start Page Engargemy*/
+     /*Start Page Engargemy*/
+
+     .the-avis .container .image-logo{
+        width: 108px;
+        display: inline-block;
+    }
+    .the-avis .container h1{
+      font-size: 45px;
+      margin-top: -10%;
+      display: inline-block !important;
+       margin: 10% !important;
+    
+    }
+
+    .the-avis .constainer-avis .avis{
+        font-size: 25px;  
+        width: 100%;
+        border-radius: 26px;
+    }
+    .the-avis .constainer-avis .avis span{
+        font-size: 27px;
+    
+    }
+    .the-avis .constainer-avis{
+        width: 330px;
+        border-radius: 40px !important;
+        -webkit-border-radius: 40px !important;
+   }
+   .the-avis .constainer-avis .avis:nth-of-type(even){
+     background-color: #86C33A;
+     align-self: flex-start;
+ }
+  
+    /*End Page Engargemy*/
+    /*End Page Engargemy*/
+
+     /*Start Footer For Smart Phone*/
+     /*Start Footer For Smart Phone*/
+     footer .container-footer{
+        padding-left: 20px;
+        display: grid;
+        grid-template-columns:  1fr !important;
+        padding-bottom:10% ;
+    }
+    footer .container-footer ul{
+        list-style: none;
+    }
+     /*End Footer For Smart Phone*/
+     /*End Footer For Smart Phone*/
+ }
+ 
+ @media (min-width: 477px){
+    .container{
+        width: 560px;
+        
+    }
+    .smart-screen{
+        display: block !important;
+    }
+
+    /*Start Page Engargemy*/
+
+    .the-avis .container .image-logo{
+        width: 150px;
+        display: inline-block;
+    }
+
+    .the-avis .constainer-avis .avis{
+       font-size: 16px;  
+        
+    }
+    .the-avis .constainer-avis .avis span{
+        font-size: 19px;
+    
+    }
+    .the-avis .constainer-avis{
+        width: 550px;
+   }
+   .the-avis .constainer-avis .avis:nth-of-type(even){
+     background-color: #86C33A;
+     align-self: flex-end;
+ }
+  
+    /*End Page Engargemy*/
+
+ }
+
+
+
+
+
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) { 
+     .container{
+        width: 760px;
+        
+    }
+
+    /* NavBar SmartPhone*/
+    .smart-screen{
+        display: block !important;
+    }
+
+   
+    
+   /*Start Page Engagament*/
+   
+   .the-avis .constainer-avis{
+       width: 600px !important;
+  }
+  .the-avis .constainer-avis .avis:nth-of-type(even){
+    background-color: #86C33A;
+    align-self: flex-end;
+  }
+}
+
+/* .enga  .container .grid .description p{
+    width: 339px !important;
+} */
+
+ /* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    .container{
+        width: 960px;
+    }
+
+    /*Disactive NavBar For Small Screen*/
+    .smart-screen{
+        display: none !important;
+    }
+    /*Activeted Menu For Deskctop*/
+    header{
+        display: block !important; 
+    }
+    nav{
+        display: block !important;
+    }
+    
+ }
+
+/*  X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    .container{
+        width: 1140px;
+    }
+
+  }
+
+/* XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) {
+    .container{
+        width: 1320px;
+    }
+  }
+
+/************** Start MEDIA QUERY  **********/
